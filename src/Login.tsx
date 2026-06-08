@@ -26,7 +26,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         payload.courseId = selectedCourse;
       }
       
-      const response = await fetch('http://127.0.0.1:3001/api/scrape', {
+      const response = await fetch('https://a-z-w3co.onrender.com/api/scrape', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
